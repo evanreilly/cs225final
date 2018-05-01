@@ -186,7 +186,7 @@ class GApp1(Exp):
         self.e2 = e2
     def infer(self, tenv):
         t1 = self.e1.infer(tenv)
-        if(isinstance(t1,QuestionMark)):
+        if(isinstance(t1,QuestionMark()):
             return QuestionMark()
 
 def CheckConsistency(t1, t2):
