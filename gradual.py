@@ -215,12 +215,20 @@ class GApp2(Exp):
         
         
 def TestFunction():
-    tenv = 
-    truetest = T()
-    falsetest = F()
-    iftest = if_(truetest, falsetest, Sum(Bool(), Bool()))
-    tenv = []
-    if truetest.infer(tenv)
+    
+    array1 = [GApp1(Lam("x",Unit,QuestionMark),Lam("x",Unit,Var("x")),QuestionMark).infer(QuestionMark)]
+    
+    array2 = [QuestionMark]
+    
+    for i in range (len(array2)):
+        if array2[i]== array1[i]:
+            print ("Test passed")
+        else:
+            print ("Test failed")
+
+
+
+TestFunction()
 
 
 
