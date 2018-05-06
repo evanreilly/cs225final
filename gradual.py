@@ -215,11 +215,25 @@ class GApp2(Exp):
         
         
 def TestFunction():
-
-    if ((T().infer({}))==Bool:
+#dummy test case 
+    if (type(T().infer({}))==type(Bool())):
         print("Test Passed")
     else:
         print("Test Failed")
+
+
+    if (type(Var("x").infer({})))==(type(Const("x").infer({}))):
+        print("Test Passed")
+    else:
+        print("Test Failed")
+'''
+    if (type(GApp1(Lam("x",Unit,Var("x")),QuestionMark).infer({}))==type(QuestionMark()):
+        print("Test Passed")
+    else:
+        print("Test Failed")
+'''
+
+
 
 
 
